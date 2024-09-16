@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+</head>
+<body>
+    <header>
+        <h1>Dillan Pho</h1>
+        <p>My Online Resume</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="documents.html">Documents</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Projects</h2>
+    </main>
+    <div>
+        <label for="firstNum">First Number: </label>
+        <input type="text" id="firstNum" name="firstNum">
+        <label for="secondNum">Second Number: </label>
+        <input type="text" id="secondNum" name="secondNum">
+        <button type="button" onclick="addition()">+</button>
+        <button type="button" onclick="subtraction()">-</button>
+        <button type="button" onclick="multiplication()">*</button>
+        <button type="button" onclick="division()">/</button>
+        <button type="button" onclick="pow()">^</button>
+        <button type="button" onclick="cleared()">Clear</button>
+        <h3 id = "output"></h3>
+    </div>
+    <footer>All Rights Reserved by Dillan Pho <a href="https://www.linkedin.com/in/dillan-pho/">Credits</a> &copy</footer>
+    <script src="calculator.js"></script>
+</body>
+</html>
