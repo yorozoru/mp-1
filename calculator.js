@@ -13,6 +13,11 @@ function inputGrabber () {
 }
 
 function output (result){
+    if (result < 0){
+        document.getElementById("output").style.color = '#d00';
+    } else {
+        document.getElementById("output").style.color = '#000000';
+    }
     document.getElementById("output").innerHTML=String(result);
 }
 
@@ -47,21 +52,18 @@ function pow (){
     if (y === 0) {
         output(1)
     }
-    else if (y < 0){
-        let original_val = x;
-        for (let i = 1; i < y; i++){
-            x = x*original_val;
-        }
-        let result = x;
-        output(1/result)
-    }
     else {
         let original_val = x;
-        for (let i = 1; i < y; i++){
+        for (let i = 1; i < Math.abs(y); i++){
             x = x*original_val;
         }
         let result = x;
-        output(result)
+        if (y < 0){
+            output(1/result)
+        }
+        else {
+            output(result)
+        }
     }
 }
 
