@@ -15,10 +15,7 @@ body {
     
 }
 
-.container{
-    margin: 0;
-    display: flex;
-}
+
 header {
     width: 100%;
     text-align: left;
@@ -49,9 +46,19 @@ nav {
     
 }
 
-ul {
-    list-style: disc;
+.container{
+    margin: 0;
+    display: flex;
+}
+
+.container ul {
+    list-style: none;
     padding: 0;
+}
+
+.container li {
+    display: block;
+    padding: 0.876vh;
 }
 
 .button {
@@ -70,11 +77,6 @@ ul {
     
 }
 
-li {
-    display: block;
-    padding: 0.876vh;
-}
-
 main {
     flex: 1;
     padding: 20px;
@@ -89,6 +91,24 @@ footer {
     color: white;
     margin-top: auto;
 }
+
+.pdf-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #ccc;
+}
+
+.pdf-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 
 @media screen and (max-width: 750px) {
@@ -129,5 +149,8 @@ footer {
     .container{
         margin: 0;
         display: block;
+    }
+    .pdf-wrapper {
+        padding-bottom: 75%;
     }
 }
