@@ -1,8 +1,8 @@
 function inputGrabber () {
     let firstNumber = document.getElementById("firstNum").value;
     let secondNumber = document.getElementById("secondNum").value;
-    firstNumber = parseFloat(firstNumber);
-    secondNumber = parseFloat(secondNumber);
+    firstNumber = Number(firstNumber);
+    secondNumber = Number(secondNumber);
 
     if (isNaN(firstNumber) || isNaN(secondNumber)){
         output("One of the two fields is not a number.")

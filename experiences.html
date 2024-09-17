@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Dillan Pho</h1>
         <p>My Online Resume</p>
     </header>
+    <div class = "container">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="documents.html">Documents</a></li>
+            <li><a href="index.html" class="button">Home</a></li>
+            <li><a href="education.html" class="button">Education</a></li>
+            <li><a href="experiences.html" class="button">Experiences</a></li>
+            <li><a href="projects.html" class="button">Projects</a></li>
+            <li><a href="skills.html"class="button">Skills</a></li>
+            <li><a href="documents.html"class="button">Documents</a></li>
         </ul>
     </nav>
     <main>
         <h2>Experiences</h2>
+        <img src="images/spark.png" alt="Boston University Spark! Logo">
+            <p>
+            Jan 2024 - May 2024<br>
+            </p>
+            <ul>
+                <li>Created Python scripts to automate the extraction of tables and other relevant texts from PDFs using PDFplumber.</li>
+                <li>Implemented a robust data pipeline to defragment over 800+ pages of text into 10 CSVs, enhancing efficiency and simplifying data processing.</li>
+                <li>Streamlined data representation by implementing Geopandas for visualizing 236 high schools on interactive maps, enhancing reader engagement with a personalized touch.</li>
+                <li>Utilized correlation matrices and linear regression techniques to discern potential underlying trends within the dataset.</li>
+                <li>Applied both the Nominatim geocoding API and US Census geocoding API to acquire precise geolocation data and validate school locations effectively, facilitating accurate mapping of area median income alongside each high school.</li>
+            </ul>
     </main>
+</div>
     <footer>All Rights Reserved by Dillan Pho <a href="https://www.linkedin.com/in/dillan-pho/">Credits</a> &copy</footer>
 </body>
 </html>
