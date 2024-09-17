@@ -49,22 +49,17 @@ function pow (){
     let array = inputGrabber();
     let x = array[0];
     let y = array[1];
-    if (y === 0) {
-        output(1)
+    let original_val = 1;
+    for (let i = 0; i < Math.abs(y); i++){
+        original_val = x*original_val;
+    }
+    if (y < 0){
+        output(1/original_val)
     }
     else {
-        let original_val = x;
-        for (let i = 1; i < Math.abs(y); i++){
-            x = x*original_val;
-        }
-        let result = x;
-        if (y < 0){
-            output(1/result)
-        }
-        else {
-            output(result)
-        }
+        output(original_val)
     }
+
 }
 
 function cleared(){
