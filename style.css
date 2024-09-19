@@ -12,12 +12,17 @@ img {
     height: auto;
 }
 
+html {
+    height: 100%;
+}
+
+
 /* Basic styling for the body, with flexbox to handle vertical layout */
 body { 
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 /* Header styling: full width, left text alignment, background and text color */
@@ -43,10 +48,12 @@ a:hover {
 nav {
     background-color: #f6a217;
     color: white;
+    height: 100%;
 }
 
 /* Container for main content, default flex display */
 .container {
+    flex-grow: 1;
     margin: 0;
     display: flex;
 }
@@ -174,39 +181,43 @@ td, th {
     }
     body {
         font-size: calc(2px + 2vw);
+        font-family: Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
     }
 
     /* Navigation adjusts to a row layout on smaller screens */
     nav {
-        width: 100%;
         display: flex;
         flex-direction: row;
+        height: 8%;
     }
+
 
     /* Flex layout for list inside navigation */
     ul {
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-evenly;
     }
 
     /* List items inline with small margin */
     li {
         display: inline;
-        margin: 0.5vh;
     }
 
     /* Adjust button padding and margin for smaller screens */
     .button {
-        padding: 1vh;
+        padding: 0.5vh;
         margin: 2%;
         font-size: calc(2px + 2vw);
     }
-
     /* Container layout reverts to block */
     .container {
         display: block;
+        flex-grow: 0;
     }
 
     /* PDF aspect ratio changes for mobile screens */
